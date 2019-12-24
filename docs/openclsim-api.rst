@@ -4,7 +4,7 @@ OpenCLSim API
 
 A flask server is part of the OpenCLSim package. This allows using the python code from OpenCLSim from a separate front-end. 
 
-Starting the Flask Server
+Starting the Flask Server: Windows
 -------------------------
 
 The example code below lets you start the Flask server from the windows command line, for other operation systems please check the `Flask Documentation`_.
@@ -20,6 +20,19 @@ The example code below lets you start the Flask server from the windows command 
     # Run Flask
     flask run
 
+
+Starting the Flask Server: Mac/Linux 
+-------------------------
+.. code-block:: bash
+
+    # Set Flask app
+    export FLASK_APP=openclsim/server.py 
+
+    # Set Flask environment
+    export FLASK_ENV=development
+
+    # Run Flask
+    flask run
 
 Using the Flask Server
 ----------------------
